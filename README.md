@@ -7,7 +7,7 @@ Go: The Complete Developers Guide Udemy course
 * := is only used when you are declaring a NEW variable. * You do not need the colon when assigning a new value to that variable
 
 ```
-  card := newCard
+card := newCard
 ```
 
 ## Arrays/Slices
@@ -32,9 +32,9 @@ cards = append(cards, "Six of Spades")
 * To iterate over the above list, you can create a for loop like below. This will loop over 'cards' and print out each card value:
 
 ```
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+for i, card := range cards {
+	fmt.Println(i, card)
+}
 ```
 
 
@@ -58,11 +58,11 @@ cards := deck{"Ace of Diamonds", newCard()}
 * An example of a reciever function:
 
 ```
-  func (d deck) print() {
-  	for i, card := range d {
-  		fmt.Println(i, card)
-  	}
-  }
+func (d deck) print() {
+	for i, card := range d {
+		fmt.Println(i, card)
+	}
+}
 ```
 
 * Back in the main.go file, a 'cards.print()' method is called. 'cards' correlates to the 'd' in the reciever function
