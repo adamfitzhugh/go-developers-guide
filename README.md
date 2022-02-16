@@ -33,8 +33,9 @@ cards = append(cards, "Six of Spades")
 ## Custom Type Declarations
 * To declare a new special type. The below code declares a slice of strings:
 
+'''
 type deck []string
-
+'''
 
 * To add the above 'deck' type to a variable, you can assign it as:
 
